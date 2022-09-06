@@ -3,6 +3,44 @@ body{
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
+.tablink{
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+.tablink:hover{
+    background-color: #777;
+}
+.tabcontent{
+    color: white;
+    display: none;
+    padding: 50px;
+    text-align: center;
+    height: 560px;
+    margin-top: 45px;
+}
+#banner1{
+    background-image: url(../img/1.png);
+    background-position: center;
+}
+#banner2{
+    background-image: url(../img/2.png);
+    background-position: center;
+}
+#banner3{
+    background-image: url(../img/3.png);
+    background-position: center;
+}
+#banner4{
+    background-image: url(../img/4.png);
+    background-position: center;
+}
 .flip-card{
     background-color: transparent;
     width: 300px;
@@ -58,6 +96,11 @@ body{
     .flex-container{
         flex-direction: column;
     }    
+}
+@media (max-width:880px){
+    .bannertab{
+        display: none;
+    }
 }
 ul{
     list-style-type: none;

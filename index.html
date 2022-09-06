@@ -26,6 +26,29 @@
         </nav>
     </header>
     <main>
+        <div class="bannerTab">
+            <div id="banner1" class="tabcontent">
+                
+            </div>
+            <div id="banner2" class="tabcontent">
+                
+            </div>
+            <div id="banner3" class="tabcontent">
+                
+            </div>
+            <div id="banner4" class="tabcontent">
+                
+            </div>
+            <button class="tablink" onclick="openCity('banner1',this,'#D97EA8')" id="defaultOpen"> ASSINATURAS</button>
+            <button class="tablink" onclick="openCity('banner2',this,'#D97EB9')">NAVE PCS</button>
+            <button class="tablink" onclick="openCity('banner3',this,'#D97ECA')">KALUNGA</button>
+            <button class="tablink" onclick="openCity('banner4',this,'#D97EDB')"> GENÉRICOS</button>
+
+
+
+        </div>
+        
+
         <div class="flex-container">
             <div class="flex-item">
                 <div class="card">
@@ -125,6 +148,24 @@
         </div>
     </main>
     <footer>
+        <script>
+            function openCity(cityName,elmnt,color) {
+              var i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablink");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+              }
+              document.getElementById(cityName).style.display = "block";
+              elmnt.style.backgroundColor = color;
+            
+            }
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+            </script>
 
     </footer>
 </body>
